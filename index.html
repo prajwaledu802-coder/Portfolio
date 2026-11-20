@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio with resume and bio-data">
-  <title>Home | Personal Portfolio</title>
+  <meta name="description" content="Prajwal — CSE Student at JCET, Hubballi. Portfolio showcasing resume, skills and bio-data.">
+  <title>Prajwal | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
   <script>
     try {
       var t = localStorage.getItem("theme");
@@ -17,7 +18,7 @@
 <body>
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="index.html"><span class="brand-mark">YN</span>Portfolio</a>
+    <a class="brand" href="index.html"><span class="brand-mark">P</span>Prajwal</a>
     <div class="nav-right">
       <nav class="nav-links" id="navLinks" aria-label="Main">
         <a href="index.html" class="current" aria-current="page">Home</a>
@@ -29,7 +30,8 @@
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
       <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ham-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ham-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
   </div>
@@ -38,22 +40,23 @@
 <main id="top">
   <section class="container hero">
     <aside class="id-card reveal" aria-label="Profile summary">
-      <div class="avatar">YN</div>
-      <h2>[Your Name]</h2>
-      <p class="role">Engineering Student</p>
+      <div class="avatar">P</div>
+      <h2>Prajwal</h2>
+      <p class="role">CSE Student &bull; JCET, Hubballi</p>
       <dl class="facts">
-        <div><dt>Field</dt><dd>Computer Science</dd></div>
-        <div><dt>Focus</dt><dd>Learning &amp; building</dd></div>
-        <div><dt>Location</dt><dd>[Your City]</dd></div>
+        <div><dt>USN</dt><dd>2JH24CS110</dd></div>
+        <div><dt>Semester</dt><dd>5th (3rd Year)</dd></div>
+        <div><dt>University</dt><dd>VTU</dd></div>
+        <div><dt>Location</dt><dd>Hubballi, KA</dd></div>
       </dl>
     </aside>
     <div class="hero-text reveal">
-      <span class="status"><i></i> Computer Science &amp; Engineering student</span>
-      <h1>Hi, I&rsquo;m [Your Name]. I like turning ideas into working code.</h1>
-      <p class="lead">I&rsquo;m an engineering student who enjoys learning new technologies, solving problems and building useful things. This site brings my resume and personal details together in one place.</p>
+      <span class="status"><i></i> Open to opportunities</span>
+      <h1>Hi, I&rsquo;m Prajwal. I build things for the web &amp; beyond.</h1>
+      <p class="lead">A 3rd-year Computer Science student at Jain College of Engineering &amp; Technology, passionate about web development, machine learning, and attending hackathons. I love turning ideas into real, working products.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="resume.html">View resume</a>
-        <a class="btn btn-outline" href="biodata.html">View bio-data</a>
+        <a class="btn btn-primary" href="resume.html">View Resume</a>
+        <a class="btn btn-outline" href="biodata.html">View Bio-data</a>
       </div>
     </div>
   </section>
@@ -61,12 +64,38 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <h2>What&rsquo;s inside</h2>
-        <p>Two pages cover everything: my academic profile and my personal information.</p>
+        <h2>What I do</h2>
+        <p>I focus on building practical skills through hands-on projects and competitions.</p>
+      </div>
+      <div class="stack reveal">
+        <div>
+          <span class="stack-icon">🌐</span>
+          <h3>Web Development</h3>
+          <p>Building responsive websites with HTML, CSS &amp; JavaScript</p>
+        </div>
+        <div>
+          <span class="stack-icon">🤖</span>
+          <h3>ML &amp; Deep Learning</h3>
+          <p>Training models, exploring neural networks &amp; AI agents</p>
+        </div>
+        <div>
+          <span class="stack-icon">🏆</span>
+          <h3>Hackathons</h3>
+          <p>Competing, collaborating &amp; building under pressure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Explore</h2>
+        <p>Everything about my academic journey and personal background.</p>
       </div>
       <div class="link-list reveal">
         <a class="link-row" href="resume.html">
-          <div><h3>Resume</h3><p>Career objective, education, technical skills, academic project and strengths.</p></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <div><h3>Resume</h3><p>Career objective, education, technical skills, projects and strengths.</p></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
         <a class="link-row" href="biodata.html">
           <div><h3>Bio-data</h3><p>Personal details, educational background, languages and interests.</p></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
@@ -78,21 +107,23 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <h2>How it&rsquo;s built</h2>
-        <p>A small, hand-written website with no frameworks or libraries.</p>
+        <h2>Built with</h2>
+        <p>Web Technology Lab Assignment &mdash; pure HTML, CSS &amp; JavaScript.</p>
       </div>
       <div class="stack reveal">
-        <div><h3>HTML</h3><p>Page structure</p></div>
-        <div><h3>CSS</h3><p>Layout, colour and themes</p></div>
-        <div><h3>JavaScript</h3><p>Menu, dark mode and skill bars</p></div>
+        <div><span class="stack-icon">📄</span><h3>HTML5</h3><p>Semantic page structure</p></div>
+        <div><span class="stack-icon">🎨</span><h3>CSS3</h3><p>Layout, themes &amp; animations</p></div>
+        <div><span class="stack-icon">⚡</span><h3>JavaScript</h3><p>Interactivity &amp; dark mode</p></div>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="footer">
   <div class="container footer-inner">
-    <span>Portfolio &copy; <span data-year></span> [Your Name]</span>
-    <a href="#top">Back to top</a>
+    <span>&copy; <span data-year></span> Prajwal &bull; JCET, Hubballi</span>
+    <span class="footer-note">Web Technology Lab Assignment</span>
+    <a href="#top">Back to top &uarr;</a>
   </div>
 </footer>
 <script src="script.js"></script>

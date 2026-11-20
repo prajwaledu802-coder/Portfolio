@@ -24,12 +24,22 @@ if (navToggle && navLinks) {
     const open = navLinks.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(open));
   });
+
+  // Close menu when a link is tapped
   navLinks.querySelectorAll("a").forEach((a) =>
     a.addEventListener("click", () => {
       navLinks.classList.remove("open");
       navToggle.setAttribute("aria-expanded", "false");
     })
   );
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 
 // ---------- Header border on scroll ----------
@@ -50,7 +60,7 @@ if (reveals.length && "IntersectionObserver" in window) {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
   reveals.forEach((el) => revealObserver.observe(el));
 } else {
   reveals.forEach((el) => el.classList.add("visible"));
@@ -65,7 +75,7 @@ if (bars.length) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) { fill(entry.target); io.unobserve(entry.target); }
       });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.3 });
     bars.forEach((b) => io.observe(b));
   } else {
     bars.forEach(fill);
@@ -75,4 +85,10 @@ if (bars.length) {
 // ---------- Footer year ----------
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
+});
+
+// ---------- Bio-data date ----------
+document.querySelectorAll("[data-date]").forEach((el) => {
+  const d = new Date();
+  el.textContent = d.toLocaleDateString("en-IN", { day: "2-digit", month: "2-digit", year: "numeric" });
 });
